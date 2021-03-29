@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 export const useStyles = makeStyles((theme) => ({
-  root: {
+  rootCadastro: {
     height: '100vh',
     border: '1px solid red',
   },
@@ -14,7 +14,7 @@ export const useStyles = makeStyles((theme) => ({
     backgroundPosition: 'center',
   },
   box: {
-    margin: theme.spacing(8, 4),
+    margin: theme.spacing(4, 4),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
