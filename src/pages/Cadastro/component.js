@@ -4,6 +4,7 @@ import { useStyles } from './style';
 import { Image, Anchor } from '../../shared';
 import logo from '../../images/logo-tomatico.png';
 import logoPlatform from '../../images/logo-platform.png';
+import { Acessar } from './Acessar';
 
 export const CadastroComponent = () => {
   const classes = useStyles();
@@ -11,7 +12,7 @@ export const CadastroComponent = () => {
     <Grid container component="main" className={classes.rootCadastro}>
       <Grid item xs={false} sm={4} md={7} className={classes.image} />
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
-        <Box className={classes.box}>
+        <Box className={classes.boxAnchors}>
           <Anchor
             anchors={[
               {
@@ -31,7 +32,10 @@ export const CadastroComponent = () => {
               },
             ]}
           />
+        </Box>
+        <Box className={classes.box}>
           <Image src={logo} width="250px" height="auto" />
+          <Acessar />
           <Image src={logoPlatform} width="150px" height="auto" />
         </Box>
       </Grid>

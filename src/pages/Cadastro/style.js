@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 export const useStyles = makeStyles((theme) => ({
   rootCadastro: {
     height: '100vh',
-    border: '1px solid red',
   },
   image: {
     backgroundImage:
@@ -18,6 +17,11 @@ export const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    border: '1px solid green',
+  },
+  boxAnchors: {
+    margin: theme.spacing(2, 4),
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
   },
 }));
