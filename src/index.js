@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { Cadastro } from './pages';
 import reportWebVitals from './reportWebVitals';
+import { ThemeProvider } from '@material-ui/styles';
+import { theme } from './themes';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Cadastro />
+    <ThemeProvider theme={theme}>
+      <Cadastro />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 );

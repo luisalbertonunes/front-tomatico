@@ -1,10 +1,13 @@
 import React from 'react';
 import { TextField, Button, Grid, Link } from '@material-ui/core';
+import { useStyles } from './style';
 
-export const AcessarComponent = () => {
+export const AcessarComponent = (props) => {
+  console.log(props, 'teste');
+  const classes = useStyles();
   return (
     <>
-      <form className="" noValidate>
+      <form className={classes.form} noValidate>
         <TextField
           variant="outlined"
           margin="normal"
@@ -32,7 +35,7 @@ export const AcessarComponent = () => {
           fullWidth
           variant="contained"
           color="primary"
-          className=""
+          className={classes.submit}
         >
           Entrar
         </Button>
